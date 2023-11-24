@@ -1,0 +1,1022 @@
+
+* { 
+  margin: 0;
+  padding: 0;
+}
+
+html,body
+{
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+
+:root {
+  --purple_custom : rgb(150,77,246);
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url('Remotasks/assets/font/Lexend-VariableFont_wght.ttf');
+}
+
+/* SEC 1 */
+/* NAV START */
+
+.section_1{
+    height: fit-content;
+    background-image: url('Remotasks/assets/Images/background1.jpg');
+    max-width: auto;
+    background-size: cover;
+}
+
+.sec_1 {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: inherit;
+  max-width: auto;
+  padding: 6em 0;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 12px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, .9);
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav_button {
+    visibility: hidden;
+    background-color: transparent;
+    color: white;
+    border: none;
+  }
+  
+
+  .nav_items:first-child{
+    position: absolute;
+    left: 0;
+    font-family: myFirstFont;
+    font-weight: 700;
+    letter-spacing:2px;
+  }
+  .nav_items:last-child{
+    position: absolute;
+    right: 2vw;
+    background-color: var(--purple_custom);
+    border: none;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    margin: 2px 0px;
+    padding: 0px 15px; 
+    cursor: pointer;
+    border-radius: 25px;
+  }
+
+
+  .nav_items a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+  }
+
+
+  @media only screen and (max-width: 1024px) {
+    /* For Tablet */
+    .nav_items:not(.nav_items:first-child)  {
+      visibility: hidden;
+    }
+
+
+    .nav_button {
+      width: 20px;
+      visibility: visible;
+      position: absolute;
+      right: 40px;
+      top: 20px;
+      background-color: transparent;
+      color: white;
+      border: none;
+      font-size: 25px;
+    }
+  }
+
+
+
+  
+/* NAV END */
+
+.section_1_text {
+  color: white;
+  text-align: left;
+  width: 42vw;
+  margin: auto;
+}
+
+.title {
+  color: white;
+  font-size: 45px;
+  font-weight: 700;
+  position: relative;
+  text-align: left;
+
+}
+
+.desc{
+  position: relative;
+  width: 100%;
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+.section_1_button {
+    position: relative;
+    background-color: var(--purple_custom);
+    border: none;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+   
+    padding : 10px 20px;
+    margin: 0px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  /* For Tablet */
+
+  .section_1_text{
+    text-align: left;
+    width: 100%;
+    /* margin-left: 20px; */
+  }
+
+  .sec_1 {
+    height: inherit;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 6em 1em;
+  }
+
+  .title {
+    font-size: 45px;
+    width: 50%;
+    font-weight: 700;
+  }
+
+  .desc {
+    font-size: 1.5rem;
+    width: 60%;
+  }
+
+  .section_1_button {
+    width: auto;
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* For phone */
+
+  .sec_1 {
+    padding:6em 3em;
+    height:inherit;
+  }
+
+
+  .section_1_text{
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* margin: 0 25%; */
+    height: fit-content;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    width: 100%;
+  }
+
+  .desc {
+    font-size: 1rem;
+    text-align: center;
+    width: inherit;
+  }
+
+  .section_1_button {
+    align-items: center;
+    text-align: center;
+    width: 30vw;
+    padding: 10px 20px;
+    font-size: 15px;
+    justify-content: center;
+  }
+}
+
+
+
+
+/* SEC END */
+  
+
+
+
+/* SEc 2 Start */
+
+.section_2 {
+  background-image: url('Remotasks/assets/Images/background6.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec2_image_div {
+  width: 21%;
+  margin:20px 30px;
+  border-radius: 20px;
+}
+
+.section_2_image {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.section_2_text {
+  color: rgb(43, 60, 88);
+  background-color: rgb(231, 241, 253);
+  border: 2px solid white;
+  font-weight: bolder;
+  border-radius: 20px;
+  
+  text-align: left;
+  height: fit-content;
+  width: 33%;
+  position: relative;
+  padding: 60px 40px 60px 40px; 
+  margin-right: 40px;
+}
+
+ .sec_2_title {
+  color: rgb(43, 60, 88);
+  font-family: myFirstFont;
+  letter-spacing: 2px;
+  font-size: 4vw;
+  border-radius: 20px;
+  
+  position: relative; 
+} 
+
+.sec_2_text {
+  color: rgb(43, 60, 88);
+  font-size: 12px;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* margin: 2vw 0; */
+  padding: 25px 0 10px 0;
+  width: 90%;
+
+}  
+
+.sec_2_text_1 {
+   position: relative;
+   font-size: 15px;
+   width: 35%;
+   padding: 0px 20px 0 0;
+}
+
+@media only screen and (max-width: 1250px) {
+
+  /* For Desktop  */
+
+  .section_2 {
+    flex-direction: column;
+    height: fit-content;
+    padding: 50px 0px;
+  }
+  
+
+.sec2_image_div{
+  width: 60%;
+  margin-bottom: 30px;
+}
+
+  .section_2_text {
+    width: 56.5%;
+    margin: 0 35px;
+    padding: 40px 20px 20px 40px;
+  }
+
+  .sec_2_title {
+    font-size: 10vw;
+  }
+
+ .sec_2_text {
+  margin: 10px 0 20px 0;
+  padding: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+ }
+
+ .sec_2_text_1 {
+
+  width: 90%;
+  margin: 0;
+  padding: 0;
+}
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+  /* For Tablet */
+
+  .section_2 {
+    flex-direction: column;
+    height: fit-content;
+    padding: 50px 0px;
+  }
+  
+
+.sec2_image_div{
+  width: 70%;
+  margin-bottom: 30px;
+}
+
+  .section_2_text {
+    width: 64%;
+    margin: 0 35px;
+    padding: 40px 20px 20px 40px;
+  }
+
+  .sec_2_title {
+    font-size: 10vw;
+    text-align: center;
+  }
+
+ .sec_2_text {
+  margin: 10px 0 20px 0;
+  padding: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+ }
+
+ .sec_2_text_1 {
+  text-align: center;
+
+  width: 90%;
+  margin: auto;
+  padding: 1em 0;
+}
+
+}
+
+/* SEc 2 End */
+
+
+
+/* Sec 3 strt */
+
+.section_3 {
+  background-image: url('Remotasks/assets/Images/background2.jpg');
+  height: 600px;
+  max-width: auto;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+
+.sec_3_main {
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  font-family: myFirstFont;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.sec_3_title {
+  font-size: 1.0vw;
+
+}
+
+.cards_main { 
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10em;
+}
+
+.cards {
+  color: rgb(48, 67, 96);
+  font-family: myFirstFont;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255,0.5);
+  backdrop-filter: blur(5px);
+  border: 1px solid white;
+  border-radius: 20px;
+
+  padding: 25px 30px;
+  height: auto;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 3% 2%;
+}
+
+.icon {
+  color: var(--purple_custom);
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border:1px solid white;
+  padding: 10px;
+  border-radius: 50%;
+  margin-bottom: 2.5vh;
+  margin-top: 2.5vh;
+}
+
+.card_button {
+  background-color: var(--purple_custom);
+  color: white;
+  padding: 10px 25px;
+  border-radius: 20px;
+  border: transparent;
+  font-size:1vw;
+  margin-bottom: 20px;
+}
+
+
+
+
+@media only screen and (max-width: 1024px) {
+
+  /* For Tablet */
+  
+  .sec_3_title {
+    font-size: 2vw;
+  }
+
+  .cards_main {
+    /* width: 100%; */
+    flex-wrap: wrap;
+    padding: 0 2em 0 2em;
+  }
+
+  .cards{ 
+    font-size: 1.8vw;
+    width: 30%;
+    height: fit-content;
+    margin-bottom: 20px;
+  }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  /* For Tablet */
+  
+  .sec_3_title {
+    font-size: 2vw;
+  }
+
+  .cards_main {
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0 2em;
+    width: fit-content;
+  }
+
+  .cards{ 
+    width: 70%;
+    font-size: 4vw;
+    height: fit-content;
+    /* min-width: 300px; */
+  }
+
+  
+
+}
+
+/* sec 3 end */
+
+
+
+/* Sec 4 strt */
+
+.section_4 {
+  background-image: url('Remotasks/assets/Images/background6.jpg');
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  max-width: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec_4_image_div {
+  width:21%;
+  margin: 20px 30px;
+}
+
+.feature_image {
+  border-radius: 30px;
+  filter: brightness(90%);
+  
+  position: relative;
+  width:100%;
+  min-width: 350px;
+  height: auto;
+}
+.sec_4_content { 
+  background-color: rgb(230, 237, 251);
+  color: rgb(45, 62, 87);
+  border: 1px solid white;
+  border-radius: 30px;
+  
+  text-align: left;
+  width: 25%;
+  min-width: 300px;
+  min-height: 300px;
+  position: relative;
+  padding: 5em 0em 4em 6em;
+  margin:0 30px ;
+}
+
+meter {
+  width: 80%;
+}
+meter::-webkit-meter-optimum-value {
+  background-color: rgb(245, 94, 40);
+}
+
+.meter_label {
+  color: rgb(94, 114, 143);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+}
+
+
+@media only screen and (max-width: 1500px) {
+/* For Desktop */
+  .section_4 {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+  }
+
+  .sec_4_content {
+    width: 74.792vw;
+    margin-bottom: 40px;
+    padding: 3em 0vh 0em 3em ;
+    margin-top: 20px;
+    height: inherit;
+  }
+
+  .sec_4_image_div {
+    width: 77.5%;
+  }
+
+  .feature_image {
+    height: 30vh;
+    margin-top: 5vh;
+    margin-right: 0;
+  }
+
+
+  meter {
+    width: 90%;
+  }
+  .meter_label {
+    width: 90%;
+  }
+  
+} 
+
+ @media only screen and (max-width: 768px) {
+/* For Tablet */
+  .section_4 {
+    flex-direction: column;
+    padding: 0 2em;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+  }
+
+  .sec_4_content {
+    width: inherit;
+    margin-bottom: 5vh;
+    padding: 1em 0vh 1em 2em;
+    margin-top: 10px;
+  }
+
+  .sec_4_image_div {
+    width: inherit;
+    margin-top: 20px;
+  }
+
+
+  meter {
+    width: 90%;
+  }
+  .meter_label {
+    width: 90%;
+  }
+  
+} 
+
+
+/* sec 4 end */
+
+
+
+
+/* Sec5 strt */
+
+.section_5 {
+  background-image: url('Remotasks/assets/Images/background4.jpg');
+  height: fit-content;
+  max-width: auto;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec_5_main {
+
+  color: rgb(29, 45, 70);
+  text-align: center;
+  position: relative;
+  width: 60vw;
+  margin-top: 50px;
+}
+
+.sec_5_cards_main {
+position: relative;
+display: flex;
+flex-direction: row;
+height: auto;
+width: 100%;
+align-items: center;
+justify-content: center;
+margin: 40px 200px 100px 200px;
+
+}
+
+.sec_5_card {
+  /* float: left; */
+  border: 2px solid white;
+  border-radius: 20px;
+  height: 12vh;
+  margin-left: 2%;
+  padding: 25px 35px;
+  width: 20%;
+
+  position: relative;
+  text-align: center;
+  background-color: rgba(230, 237, 251,0.9);
+}
+
+@media only screen and (max-width: 1077px) {
+  .sec_5_cards_main {
+    padding: 1em 14em;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .sec_5_cards_main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px 20px 30px 20px;
+  }
+
+  .sec_5_card {
+    max-width: 250px;
+    margin: 20px 20px 20px 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .sec_5_cards_main {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 20px 20px 30px 20px;
+    width: 80%;
+  }
+
+  .sec_5_card {
+    width: inherit;
+    margin: 20px 20px 20px 20px;
+  }
+}
+/* sec5 end */
+
+
+
+/* Sec 6 strt */
+
+.section_6 {
+  background-image: url('Remotasks/assets/Images/background5.jpg');
+  height: fit-content;
+  max-width: auto;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3em 0;
+}
+
+.sec_6_content {
+  color: rgb(49, 65, 88);
+  text-align: center;
+  background-color: rgba(255, 255, 255,.5);
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+  
+  width: 70%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 2em;
+}
+
+.sec_6_content_sub {
+  font-family: myFirstFont;
+  
+  width: 80%;
+  font-size: 25px;
+  margin: 5% auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+
+.sec_6_connected {
+  font-family: myFirstFont;
+  font-size: 40px;
+  margin: 5% 0 1%  0;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+  .sec_6_connected {
+    font-size: 30px;
+  }
+
+  .sec_6_content_sub {
+    flex-direction: column;
+    font-size: 15px;  
+    text-align: start;
+  }
+
+  .sec_6_content_sub div {
+    margin: 0;
+    font-size: 13px;
+    width: 100% !important;
+  }
+
+  .sec_6_content_sub div i {
+    margin: 5% 0 !important;
+    text-align: left !important;
+    justify-content: left !important;
+    align-items: start !important;
+  }
+}
+/* sec 6 end */
+
+
+/* Sec7 strt */
+
+
+.sec_7_feed{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.409);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.section_7{
+  background-image: url("Remotasks/assets/Images/background7.jpg");
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+}
+
+.subscribe{
+  border-radius: 0px;
+  color: white;
+  font-weight: bold;
+  margin: 0;
+  background-color: var(--purple_custom); 
+  padding: 0.7em 2.5em;
+}
+
+.sec_7_box{
+  border: 2px solid white;
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  background-color: rgba(230, 237, 251,0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding: 20px 40px;
+}
+
+input[type=email]{
+  width: 30vw;
+  height: 40px;
+  border: none;
+}
+
+.input_icon{
+  position: relative;
+  float: right;
+  top: 10px;
+  right: 30px;
+  color: red;
+}
+
+.join_text{
+  font-weight: 600;
+  color: rgb(3, 32, 60);
+}
+ 
+@media only screen and (max-width:1024px){
+  .section_7{
+    height: fit-content;
+  }
+  .sec_7_feed{
+    flex-direction: column;
+    padding: 40px 0px;
+  }
+  .join_text{
+    padding-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width:768px){
+
+.sec_7_box{
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  padding: 20px 20px;
+  width: 80%;
+}
+.join_input{
+  width: 100%;
+  margin: 2% 0;
+}
+
+input[type=email]{
+  width: 100%;
+}
+.input_icon{
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+.subscribe{
+  width: 100%;
+}
+.sec_7_feed{
+  flex-direction: column;
+}
+}
+/* sec7 end */
+
+/* Sec8 strt */
+
+.footer {
+  height: 300px;
+  background-color: rgb(2, 2, 36);
+  color: white;
+  width: 100%;
+}
+
+
+.footer_content{
+  height: inherit;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_list{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 10px;
+  width: 10%;
+}
+
+.footer_heading {
+  font-weight: bolder;
+  font-size: 16px;
+  padding-bottom: 10px;
+  list-style-type: none;
+}
+
+.footer_desc{
+  font-size: 10px;
+  font-weight: 200;
+  padding: 2px 0px;
+  list-style-type: none;
+}
+
+
+.footer_about{
+  margin-right: 20%;
+  width: 20%;
+}
+
+@media only screen and (max-width: 1024px){
+
+  .footer_content{
+    flex-wrap: wrap;
+    padding: 50px 0px;
+  }
+  .footer_list{
+    width: 40%;
+  }
+
+  .footer{
+    height: fit-content;
+  }
+
+  .footer_about{
+    margin: 0;
+  }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+
+
+
+.footer_list , .footer_desc {
+  visibility: visible;
+}
+
+}
+
+/* sec8 end */
